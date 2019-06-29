@@ -6,7 +6,7 @@ else()
   add_library(GLAD SHARED ${GLAD_SRCS})
 endif()
 
-target_include_directories(GLAD PRIVATE ${CMAKE_CURRENT_LIST_DIR}/include)
+target_include_directories(GLAD PUBLIC ${CMAKE_CURRENT_LIST_DIR}/include)
 
 target_link_libraries(GLAD ${CMAKE_DL_LIBS})
 
